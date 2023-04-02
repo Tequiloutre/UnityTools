@@ -13,3 +13,13 @@ ex : The field "value" is only showed when the bool field "condition" is true
 
 [📥Download Package](https://github.com/Tequiloutre/UnityTools/releases/download/v1/Unity_EditCondition.unitypackage)  
 [📥Source code](https://github.com/Tequiloutre/UnityTools/tree/main/UnityTools/Assets/Scripts/EditCondition)
+
+## SerializableDictionary
+SDictionary is a Class working as a classic C# Dictionary but it can be serialized and edited in Inspector
+```cs
+[SerializeField] private SDictionary<string, int> dico = new SDictionary<string, int>();
+```
+![screenshot dictionary](https://github.com/Tequiloutre/UnityTools/blob/main/Screenshots/Screen_Dico.png)
+
+[📥Download Package](https://github.com/Tequiloutre/UnityTools/releases/download/v2/SerializableDictionary_v2.unitypackage)  
+[📥Source code](https://github.com/Tequiloutre/UnityTools/tree/main/UnityTools/Assets/Scripts/SerializableDictionary)
