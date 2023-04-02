@@ -332,6 +332,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   condition: 1
   value: 0
+  dico:
+    content:
+    - key: Test
+      value: 1
+    - key: Test2
+      value: 2
 --- !u!4 &1573634486
 Transform:
   m_ObjectHideFlags: 0
