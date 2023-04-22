@@ -1,6 +1,16 @@
 # UnityTools
 Just some tools for Unity Engine
 
+## Preview Generator
+PreviewGenerator is a tool that generate Sprite images of Prefabs  
+Just select some Prefabs & Right Click > Create > Sprite Preview  
+
+![screenshot preview](https://github.com/Tequiloutre/UnityTools/blob/main/Screenshots/Screen_Preview.png?raw=true)  |  ![screenshot sprite](https://github.com/Tequiloutre/UnityTools/blob/main/Screenshots/Screen_Preview_Sprite.png?raw=true)
+:-------------------------:|:-------------------------:
+
+[📥Download Package](https://github.com/Tequiloutre/UnityTools/releases/download/preview-generator_v1/PreviewGenerator_v1.unitypackage)  
+[📥Source code](https://github.com/Tequiloutre/UnityTools/tree/main/UnityTools/Assets/Scripts/PreviewGenerator)
+
 ## EditCondition
 EditCondition is a CustomAttribute used to show or hide fields depending on another value  
 ex : The field "value" is only showed when the bool field "condition" is true
@@ -27,13 +37,3 @@ SDictionary is a Class working as a classic C# Dictionary but it can be serializ
 
 [📥Download Package](https://github.com/Tequiloutre/UnityTools/releases/download/v2/SerializableDictionary_v2.unitypackage)  
 [📥Source code](https://github.com/Tequiloutre/UnityTools/tree/main/UnityTools/Assets/Scripts/SerializableDictionary)
-
-## Preview Generator
-PreviewGenerator is a tool that generate Sprite images of Prefabs  
-Just select some Prefabs & Right Click > Create > Sprite Preview  
-
-![screenshot preview](https://github.com/Tequiloutre/UnityTools/blob/main/Screenshots/Screen_Preview.png?raw=true)  |  ![screenshot sprite](https://github.com/Tequiloutre/UnityTools/blob/main/Screenshots/Screen_Preview_Sprite.png?raw=true)
-:-------------------------:|:-------------------------:
-
-[📥Download Package](https://github.com/Tequiloutre/UnityTools/releases/download/preview-generator_v1/PreviewGenerator_v1.unitypackage)  
-[📥Source code](https://github.com/Tequiloutre/UnityTools/tree/main/UnityTools/Assets/Scripts/PreviewGenerator)
