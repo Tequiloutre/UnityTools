@@ -8,7 +8,7 @@ Just select some Prefabs & Right Click > Create > Sprite Preview
 ![screenshot preview](https://github.com/Tequiloutre/UnityTools/blob/main/Screenshots/Screen_Preview.png?raw=true)  |  ![screenshot sprite](https://github.com/Tequiloutre/UnityTools/blob/main/Screenshots/Screen_Preview_Sprite.png?raw=true)
 :-------------------------:|:-------------------------:
 
-[📥Download Package](https://github.com/Tequiloutre/UnityTools/releases/download/preview-generator_v1/PreviewGenerator_v1.unitypackage)  
+[📥Download Package](https://github.com/Tequiloutre/UnityTools/releases/download/preview-generator_v2/PreviewGenerator_v2.unitypackage)  
 [📥Source code](https://github.com/Tequiloutre/UnityTools/tree/main/UnityTools/Assets/Scripts/PreviewGenerator)
 
 ## EditCondition
