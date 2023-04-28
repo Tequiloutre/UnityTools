@@ -10,22 +10,30 @@ public static class PreviewGenerator
 	{
 		GameObject[] _objects = Selection.gameObjects;
 		foreach (GameObject _object in _objects)
-		{
-			string _assetPath = AssetDatabase.GetAssetPath(_object);
-			
-			string _localFolder = _assetPath[_assetPath.IndexOf('/')..(_assetPath.LastIndexOf('/') + 1)];
-			File.WriteAllBytes(Application.dataPath + _localFolder + _object.name + ".png", AssetPreview.GetAssetPreview(_object).EncodeToPNG());
-			
-			AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
-			
-			string _assetFolder = _assetPath[..(_assetPath.LastIndexOf('/') + 1)];
-			TextureImporter _importer = (TextureImporter) AssetImporter.GetAtPath(_assetFolder + _object.name + ".png");
-			_importer.isReadable = true;
-			_importer.textureType = TextureImporterType.Sprite;
-			_importer.SaveAndReimport();
-		}
+			GenerateObjectSprite(_object);
 		
-		AssetDatabase.Refresh();
+		AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+	}
+
+	private static void GenerateObjectSprite(GameObject _object)
+	{
+		string _assetPath = AssetDatabase.GetAssetPath(_object);
+		
+		Texture2D _texture = null;
+		while (_texture == null)
+			_texture = AssetPreview.GetAssetPreview(_object);
+		
+		byte[] _data = _texture.EncodeToPNG();
+		string _localFolder = _assetPath[_assetPath.IndexOf('/')..(_assetPath.LastIndexOf('/') + 1)];
+		File.WriteAllBytes(Application.dataPath + _localFolder + _object.name + ".png", _data);
+			
+		AssetDatabase.Refresh(ImportAssetOptions.ForceUpdate);
+			
+		string _assetFolder = _assetPath[..(_assetPath.LastIndexOf('/') + 1)];
+		TextureImporter _importer = (TextureImporter) AssetImporter.GetAtPath(_assetFolder + _object.name + ".png");
+		_importer.isReadable = true;
+		_importer.textureType = TextureImporterType.Sprite;
+		_importer.SaveAndReimport();
 	}
 	#endif
 }
